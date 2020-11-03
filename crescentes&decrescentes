@@ -1,0 +1,65 @@
+# include <stdio.h>
+
+int main(){
+
+    int operador;
+    int a, b, c, d, e, f;
+
+    printf("Digite o operador: ");
+
+    scanf("%d", &operador);
+
+    switch(operador){
+
+    case 1:
+
+    printf("Digite 2 numeros:\n");
+
+
+        scanf("%d %d", &a, &b, &c);
+        if (a > c) {
+            int tmp = c;
+            c = a;
+            a = tmp;
+        }
+        if (a > b) {
+            int tmp = b;
+            b = a;
+            a = tmp;
+        }
+        if (b > c) {
+            int tmp = c;
+            c = b;
+            b = tmp;
+        }
+        printf("%d %d", a, b, c);
+
+        break;
+
+    case 2:
+
+        printf("Digite 2 numeros:\n");
+
+            scanf("%d %d", &d, &e, &f);
+            if (d < f) {
+                int tmp = f;
+                f = d;
+                d = tmp;
+            }
+            if (d < e) {
+                int tmp = e;
+                e = d;
+                d = tmp;
+            }
+            if (e < f) {
+                int tmp = f;
+                f = e;
+                e = tmp;
+            }
+            printf("%d %d", d, e, f);
+
+        }
+
+    return 0;
+
+}
